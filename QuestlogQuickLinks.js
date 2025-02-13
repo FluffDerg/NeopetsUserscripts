@@ -56,4 +56,18 @@
         const url = baseUrl + encodeURI(name);
         x.parentNode.firstChild.onclick = () => window.open(url);
     });
+
+    // Add Trudy's Surprise gift box button
+    const container = document.createElement("div");
+    container.id = "alerts"
+    container.classList = "alerts-tab-content__2020"
+    container.style = "height: auto"
+
+    const button = document.createElement("div");
+    button.classList = "alerts-tab-item-icon__2020 alerts-tab-eventcode-12000";
+    button.onclick = () => window.open("/trudys_surprise.phtml");
+    button.title = "Trudy's Surprise";
+
+    container.appendChild(button);
+    document.querySelector('div[class="questlog-top"]').appendChild(container);
 })();
