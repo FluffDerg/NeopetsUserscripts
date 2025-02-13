@@ -43,4 +43,17 @@
             break;
         }
     });
+
+    // Open Jellyneo search window when clicking on quest rewards
+    const baseUrl = "https://items.jellyneo.net/search/?name=";
+    const name = document.querySelector('div[class="ql-bonus-item"]').firstChild.data;
+    const url = baseUrl + encodeURI(name);
+    document.querySelector('img[class="ql-bonus-img"]').onclick = () => window.open(url);
+
+    document.querySelectorAll('div[class="ql-reward-label"]').forEach(x => {
+        const name = x.firstChild.data;
+        if (name.endsWith(" NP")) return;
+        const url = baseUrl + encodeURI(name);
+        x.parentNode.firstChild.onclick = () => window.open(url);
+    });
 })();
