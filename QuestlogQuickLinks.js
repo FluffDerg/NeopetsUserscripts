@@ -16,7 +16,7 @@
         "customise": "/customise",
         "feed": "/inventory.phtml",
         "groom": "/inventory.phtml",
-        "play": "/games/h5game.phtml?game_id=1392",
+        "play": "/games/game.phtml?game_id=500&size=regular&quality=high&play=true",
         "purchase": "/generalstore.phtml",
         "excitement": "/faerieland/wheel.phtml",
         "extravagance": "/desert/extravagance.phtml",
